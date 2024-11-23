@@ -1,39 +1,35 @@
-/* Fijar la navbar al top de la pantalla */
 .navbar {
   display: flex;
-  align-items: center; /* Centra los items verticalmente */
+  align-items: center;
   padding: 10px;
-  position: fixed;  /* Fija la navbar al top */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #242424; /* Fondo oscuro para la navbar */
-  z-index: 1000;  /* Asegura que la navbar esté por encima de otros elementos */
-  justify-content: flex-start; /* Alinea los elementos a la izquierda */
+  background-color: #242424;
+  z-index: 1000;
+  justify-content: flex-start;
 }
 
-/* Logo de la navbar */
 .logo-link img {
-  height: 40px; /* Ajustar el tamaño del logo */
+  height: 40px;
   margin-left: 120px;
-  margin-right: 20px; /* Espacio entre el logo y los enlaces */
+  margin-right: 20px;
 }
 
-/* Foto de perfil */
 .pfp img {
-  height: 40px; /* Ajustar el tamaño de la foto de perfil */
-  border-radius: 50%; /* Hacer la imagen redonda */
-  margin-left: 20px; /* Espacio entre los enlaces y la foto de perfil */
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
 }
 
-/* Barra de búsqueda */
 .search-container {
-  margin-left: 80px; /* Separación entre los enlaces y la barra de búsqueda */
+  margin-left: 80px;
   margin-right: 60px;
 }
 
 .search-input {
-  width: 250px; /* Ajustar el tamaño de la barra de búsqueda */
+  width: 250px;
   padding: 8px 12px;
   font-size: 16px;
   border-radius: 8px;
@@ -44,49 +40,42 @@
 
 .search-input:focus {
   outline: none;
-  border-color: #2e5179; /* Cambiar color al foco */
+  border-color: #2e5179;
 }
 
-/* Links de la navbar */
 .navbar-link {
-  font-size: 20px; /* Hacer el texto más grande */
-  margin-right: 60px; /* Espaciado entre los enlaces */
+  font-size: 20px;
+  margin-right: 60px;
   display: flex;
-  align-items: center; /* Centrar verticalmente los enlaces con el logo */
-  color: #fff; /* Hacer que el texto sea blanco */
-  text-decoration: none; /* Eliminar el subrayado de los enlaces */
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
 }
 
-/* Espacio adicional para evitar que se peguen los enlaces a la barra de búsqueda */
 .navbar-link:hover {
-  color: #2e5179; /* Cambiar el color al pasar el ratón */
+  color: #2e5179;
 }
 
-/* Ajustar el contenido principal para que no se solape con la navbar */
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  padding-top: 80px; /* Dejar espacio para la navbar fija */
+  padding-top: 80px;
   text-align: center;
 }
 
-/* Fondo claro para el resto de la página */
 body {
-  background-color: #ffffff; /* Fondo blanco para el cuerpo */
-  color: #213547; /* Color oscuro para el texto */
+  background-color: #ffffff;
+  color: #213547;
 }
 
-/* Estilos generales */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -152,35 +141,32 @@ button:focus-visible {
   }
 }
 
-/* Establecer la imagen de fondo para toda la página */
 body {
   background-image: url('https://i.ibb.co/yfmg4FW/photo-1600354279787-0a726615ef44-1.jpg');
-  background-size: cover; /* La imagen cubre todo el fondo */
-  background-position: center center; /* Centra la imagen en la pantalla */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  background-attachment: fixed; /* Hace que la imagen quede fija mientras se hace scroll */
-  width: 100%; /* Hace que ocupe todo el ancho */
-  height: 100vh; /* Asegura que la imagen cubra al menos toda la altura de la pantalla */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Alinea el contenido hacia la parte superior */
+  justify-content: flex-start;
 }
 
-/* Estilo para el contenedor de Home (sin fondo) */
 .home-container {
   position: relative;
-  z-index: 1; /* Asegura que el contenido de la página quede encima del fondo */
+  z-index: 1;
   width: 100%;
-  color: #fff; /* Asegura que el texto sea blanco para destacarse sobre el fondo */
+  color: #fff;
   padding: 20px;
 }
 
-/* Sombra para el texto en h1 */
 .home-container h1 {
-  font-size: 3.5rem; /* Ajusta el tamaño de la fuente */
-  color: white; /* Asegura que el texto sea blanco */
-  text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.364); /* Agrega sombra al texto */
+  font-size: 3.5rem;
+  color: white;
+  text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.364);
   margin: 0;
   padding: 10px;
 }
